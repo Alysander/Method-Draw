@@ -1,47 +1,7 @@
-# Method Draw
+# Svg drawing experiments
 
-Method Draw is a web based vector drawing application. The purpose of Method Draw is to provide a simple and easy-to-use SVG editor experience. It purposely removes some features such as layers and line-caps/corners in exchange for a more simple and pleasant experience. If you are looking for a more complete vector editing open-source solution, please check out [SVG Edit](https://github.com/SVG-Edit/svgedit).
-
-## Online sync and sharing
-
-Cloud sync and sharing are available on Method Draw for Deta.
-
-[<img src="https://method.ac/img/install-on-deta.png" width="200">](https://deta.space/discovery/method-draw?ref=method.ac)
-
-#### [Try Method Draw](https://editor.method.ac) online.
-
-![Method Draw](https://method.ac/img/method-draw2021.png)
-
-## Development
-
-Develop and run a local web server under `src`;
-
-```
-cd src
-python -m SimpleHTTPServer 8000
-```
-
-or if you have Python 3: 
-
-```
-cd src
-python -m http.server 8000
-```
-
-## Build
-
-Install dev dependencies:
-
-`npm install`
-
-Then you can build into `dist` by running:
-
-`gulp build`
-
-Deploy `dist` to your static file server of choice.
-
-## Release notes
-
+## History
+**2021.06.16** Project forked from Method-Draw  
 **2021.05.26** Minor redesign
 **2021.05.12** Solved stability issues
 **2021.02.15** Major code refactor  
@@ -54,9 +14,8 @@ Deploy `dist` to your static file server of choice.
 **2015.01.01** Project frozen  
 **2013.01.01** Project forked from SVG-Edit  
 
-Sponsor development in the form of [one-time donations](https://method.ac/donate/), or by hiring me to customize Method Draw for your own needs (only simple 2-20 hour projects).
 
 Method Draw is Copyright (c)
 Mark MacKay [mark@method.ac](mailto:mark@method.ac)
 
-Published under an MIT License. Enjoy.
+Published under an MIT License. 
