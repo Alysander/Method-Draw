@@ -144,7 +144,17 @@ MD.Canvas = function(){
     workarea.scroll();
   }
 
+  function rename(str) {
+    if (str.length) {
+      $('#canvas_title').val(str);
+      svgCanvas.setDocumentTitle(str);
+    }
+  }
+
+  rename(state.get("canvasTitle"));
+
   this.resize = resize;
   this.update = update;
+  this.rename = rename;
   this.changeSize = changeSize;
 }

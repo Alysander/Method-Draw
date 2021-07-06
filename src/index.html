@@ -12,6 +12,7 @@
 
   <!-- build:css all.css -->
   <link rel="stylesheet" href="css/base.css" type="text/css"/>
+  <link rel="stylesheet" href="css/method-draw.css" type="text/css"/>
   <link rel="stylesheet" href="css/jpicker.css" type="text/css"/>
   <link rel="stylesheet" href="css/jgraduate.css" type="text/css"/>
   <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
@@ -27,7 +28,6 @@
   <link rel="stylesheet" href="css/source.css" type="text/css"/>
   <link rel="stylesheet" href="css/keyboard.css" type="text/css"/>
   <link rel="stylesheet" href="css/dialog.css" type="text/css"/>
-  <link rel="stylesheet" href="css/method-draw.css" type="text/css"/>
   <link rel="stylesheet" href="css/app.css" type="text/css"/>
   <link rel="stylesheet" href="css/tools.css" type="text/css"/>
   <link rel="stylesheet" href="css/button.css" type="text/css"/>
@@ -158,6 +158,13 @@
     <h4>Canvas</h4>
 
     <div class="draginputs">
+
+
+      <label class="draginput twocol textcontent" data-title="Change Content">
+        <input id="canvas_title" type="text" />
+        <span>Title</span>
+      </label>
+
 
       <label data-title="Change canvas width" class="draginput">
         <input id="canvas_width" type="text" pattern="[0-9]*" value="800" />
@@ -384,7 +391,7 @@
 
     <h4>Text</h4>
     <div class="draginputs">
-      <label class="draginput twocol textcontent" data-title="Change Content">
+      <label class="draginput twocol" data-title="Change Content">
         <input id="text" type="text"/>
         <span>Content</span>
       </label>
@@ -428,17 +435,18 @@
   </div>
   
   <div id="g_panel" class="context_panel clearfix">
-      <h4>Group</h4>
-      <div class="draginputs">
-        <label>
-          <input id="g_x" class="attr_changer" data-title="Change groups's x coordinate" data-attr="x" pattern="[0-9]*" />
-          <span>X</span>
-        </label>
-        <label>
-          <input id="g_y" class="attr_changer" data-title="Change groups's y coordinate" data-attr="y" pattern="[0-9]*" />
-          <span>Y</span>
-        </label>
+    <h4>Group</h4>
+    <div class="draginputs">
+      <label>
+        <input id="g_x" class="attr_changer" data-title="Change groups's x coordinate" data-attr="x" pattern="[0-9]*" />
+        <span>X</span>
+      </label>
+      <label>
+        <input id="g_y" class="attr_changer" data-title="Change groups's y coordinate" data-attr="y" pattern="[0-9]*" />
+        <span>Y</span>
+      </label>
     </div>
+    <div class="button full" title="Ungroup Elements" id="button_ungroup">Ungroup</div>
   </div>
   
   <div id="path_node_panel" class="context_panel clearfix">
@@ -455,7 +463,7 @@
       </label>
       
       <div id="segment_type" class="draginput label">
-        <span>Segment Type</span>
+        <span>Seg Type</span>
         <select id="seg_type" data-title="Change Segment type">
           <option id="straight_segments" selected="selected" value="4">Straight</option>
           <option id="curve_segments" value="6">Curve</option>
@@ -590,6 +598,7 @@
         </div>
     </div>
     <div class="clearfix"></div>
+    <div class="button full" id="button_group">Group Elements</div>
     <div class="button full" id="tool_text_on_path" title="Place text on path">Place text on path</div>
 
   </div>
@@ -806,6 +815,7 @@
   <script type="text/javascript" src="js/Palette.js"></script>
   <script type="text/javascript" src="js/Zoom.js"></script>
   <script type="text/javascript" src="js/Modal.js"></script>
+  <script type="text/javascript" src="js/Title.js"></script>
   <script type="text/javascript" src="js/Darkmode.js"></script>
   <script type="text/javascript" src="js/ContextMenu.js"></script>
   <script type="text/javascript" src="js/Shapelib.js"></script>
@@ -819,6 +829,7 @@
   <script type="text/javascript" src="js/lib/taphold.js"></script>
   <script type="text/javascript" src="js/lib/filesaver.js"></script>
   <script type="text/javascript" src="js/paste.js"></script>
+  <script type="text/javascript" src="js/modals.js"></script>
   <script type="text/javascript" src="js/start.js"></script>
   <!-- endbuild -->
 </body>
